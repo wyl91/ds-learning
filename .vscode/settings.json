@@ -1,0 +1,35 @@
+{
+    // ---- 编码与换行：统一 UTF-8 + LF，和 Linux / CTF 靶机环境一致 ----
+    "files.encoding": "utf8",
+    "files.autoGuessEncoding": true,
+    "files.eol": "\n",
+
+    // ---- C 代码风格 ----
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "editor.formatOnSave": true,
+    "editor.rulers": [100],
+    "[c]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+
+    // ---- C/C++ 插件 ----
+    "C_Cpp.default.cStandard": "c17",
+    "C_Cpp.default.compilerPath": "C:/msys64/mingw64/bin/gcc.exe",
+    "C_Cpp.errorSquiggles": "enabled",
+
+    // ---- 终端：强制 UTF-8，避免中文输出乱码 ----
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "terminal.integrated.env.windows": {
+        "LANG": "zh_CN.UTF-8"
+    },
+
+    // ---- 排除干扰 ----
+    "files.exclude": {
+        "**/build": true
+    },
+    "search.exclude": {
+        "**/build": true
+    }
+}
